@@ -1,0 +1,270 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Kenny Garcia} \\ \vspace{1pt}
+    \small 562-536-2101 $|$ \href{https://www.kennygarcia4dev@gmail.com}{\underline{kennygarcia4dev@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/kennygarcia15}{\underline{linkedin.com/in/kennygarcia15}} $|$
+    \href{https://github.com/bebopkenny}{\underline{github.com/bebopkenny}} $|$ \href{https://kennygarcia.net}{\underline{kennygarcia.net}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, Fullerton}{Fullerton, CA}
+      {Bachelor of Science in Computer Science}{Aug 2023 -- Expected May 2027}
+        \begin{itemize}[leftmargin=0.001in, label={}]
+    \small{\item{
+     \textbf{Relevant Coursework}{: Algorithm Engineering, Linear Algebra, Software Testing, Natural Language Processing} }}
+     \end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Python, Java, JavaScript, TypeScript, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Node.js, TailwindCSS, Pandas, Scikit-learn, PyTorch, PostgreSQL} \\
+     \textbf{Software Tools}{: Git, Docker, Jupyter Notebook, Neovim, AWS (EC2, S3, SageMaker), Linux (Fedora, Arch)}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Lead Instructor} $|$ \emph{Tutor Zone}}{Jan 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Supervised and trained \textbf{7} instructors teaching K–6 classes of \textbf{12–20} students}
+            \resumeItem{Coached instructors through observations and feedback to improve lesson delivery and classroom effectiveness}
+            \resumeItem{Worked closely with directors and principal to resolve disruptions, technical issues, and instructor performance}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Computer Science Instructor} $|$ \emph{Coding Minds Academy}}{Nov 2024 -- Sep 2025}
+          \resumeItemListStart
+            \resumeItem{Taught C++, Java, Python, Machine Learning, and Generative AI to about \textbf{40} students across cohorts}
+            \resumeItem{Guided student teams through capstone projects and organized final showcase presentations for parents}
+            \resumeItem{Improved student proficiency by reinforcing debugging skills, problem solving, and project based learning practices}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Elephant Hunt} $|$ \emph{\href{https://github.com/bebopkenny/Elephant-Hunt}{GitHub Repo}} $|$ \emph{Python, Streamlit, Supabase, PostgreSQL, Grok API}}{Aug 2025 -- Sep 2025}
+          \resumeItemListStart
+            \resumeItem{Co-developed a campus-wide scavenger hunt for \textbf{30} players across \textbf{6} teams during ACM and Node Buddies events}
+            \resumeItem{Built \textbf{Supabase} backend validating scans, updating scores in real time, and enforcing unique paths at \textbf{15} stations}
+            \resumeItem{Integrated Grok chatbot riddles to guide players while exposing LLM vulnerabilities and \textbf{prompt injection} risks}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{CSU Housing Attrition Predictor} $|$ \emph{\href{https://github.com/0x10jalencas/csu-summer-ai-camp-2025/tree/main}{GitHub Repo}} $|$ \emph{Python, Scikit-learn, Next.js, EC2, SageMaker, S3}}{July 2025}
+          \resumeItemListStart
+            \resumeItem{Selected for CSU AI Summer Camp \textbf{(50 of 900)} hosted by \textbf{AWS} and collaborated on attrition prediction project}
+            \resumeItem{Led model development in a \textbf{5}-person team, engineering \textbf{22} features with \textbf{Pandas} and \textbf{sklearn} to train a \textbf{sigmoid neuron} achieving \textbf{0.86 F1} while ensuring interpretability for housing staff}
+            \resumeItem{Deployed model using \textbf{EC2} and \textbf{SageMaker} with an \textbf{S3} data pipeline and \textbf{React} dashboard for staff analysis}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Gene Scope} $|$ \emph{\href{http://www.github.com/bebopkenny/Gene-Scope}{GitHub Repo}} $|$ \emph{Python, Flask, Next.js, PostgreSQL, Docker}}{May 2025 -- Sep 2025}
+          \resumeItemListStart
+            \resumeItem{Developed AI tool predicting variant pathogenicity with \textbf{{90\%}} accuracy using \textbf{Evo2} LLM on \textbf{Modal GPU}}
+            \resumeItem{Reduced variant analysis time by \textbf{{80\%}} via H100 GPU backend deployed with \textbf{Python} and \textbf{FastAPI}}
+            \resumeItem{Built intuitive genome browser app in \textbf{Next.js}, enhancing user-driven genetic data exploration}
+          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{GoCrawler} $|$ \emph{\href{https://www.github.com/bebopkenny/GoCrawler}{GitHub Repo} $|$ Go, Java Spring Boot, PostgreSQL, Next.js, Docker}}{April 2025 -- Present}
+      %     \resumeItemListStart
+      %       \resumeItem{Engineered distributed Go crawler with Redis queue and goroutines, scraping 50k URLs per minute}
+      %       \resumeItem{Containerized microservices on AWS Fargate, deployed via GitHub Actions CI, monitored by Prometheus}
+      %       \resumeItem{Built interactive Next.js dashboard visualizing crawl metrics, page rank, and broken-link maps}
+      %     \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------PROGRAMS-----------
+% \section{Professional Development}
+%     \resumeSubHeadingListStart
+%             \resumeProjectHeading
+%           {\textbf{Cal Poly SLO CSU AI Summer Camp (Sponsored by AWS)} $|$ \emph{Selected Participant (50 of 900)}}{July 2025}
+%           \resumeItemListStart
+%             \resumeItem{Selected from 900+ CSU students for a week-long AI program focused on real campus challenges}
+%             \resumeItem{Learned prompt engineering, embeddings, multi-modal AI, and full-stack deployment via AWS}
+%             \resumeItem{Collaborated with a 5-person team under AWS mentors to design and pitch AI-driven campus solutions}
+%             \resumeItem{Learned prompt engineering, embeddings, and full-stack AI from AWS mentors in guided workshops}
+%           \resumeItemListEnd
+%           \resumeProjectHeading
+%           {\textbf{CodePath TIP 102 - Technical Interview Prep} $|$ \emph{Selected Participant}}{June 2025 -- Aug 2025}
+%           \resumeItemListStart
+%             \resumeItem{Completed 10-week selective program, mastering algorithms and mock technical interviews}
+%             \resumeItem{Practiced LeetCode-style drills, pair programming, and problem-solving labs with peers}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------Leadership-----------
+\section{Leadership and Activities}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{FullyHacks} $|$ \emph{Web Committee Member}}{Sep 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Collaborating with peers to develop the official hackathon website supporting \textbf{400+} applicants and \textbf{10+} sponsors}
+            \resumeItem{Contributing full-stack development in \textbf{React} and \textbf{TypeScript} for registration, scheduling, and sponsor features}
+            \resumeItem{Supporting leads in delivering a polished platform that boosts visibility for CSUF’s largest 24-hour hackathon}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Society of Hispanic Professional Engineers (SHPE)} $|$ \emph{Web Dev Board Member}}{Sep 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Partnering with webmaster and \textbf{3} peers to rebuild SHPE-CSUF website serving \textbf{487} student members}
+            \resumeItem{Building site functionality with \textbf{Next.js} and \textbf{TailwindCSS} to improve recruitment and event promotions}
+            \resumeItem{Advancing chapter revival through technical leadership and planned \textbf{open-source} contributions}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Association For Computing Machinery (ACM)} $|$ \emph{Dev Project Manager, OS and AI Officer}}{July 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Managed \textbf{8} student teams of \textbf{3} to \textbf{4} members delivering semester projects across domains}
+            \resumeItem{Organized kickoff workshop, created Discord channels, and weekly check ins for ongoing guidance}
+            \resumeItem{Mentored students on frontend, backend, and \textbf{API} design, supporting successful project delivery across all teams}
+            \resumeItem{Built hackathon page and events calendar for acmcsuf.com using \textbf{TypeScript}, boosting visibility and engagement}
+            \resumeItem{Led AI workshops on \textbf{ML}, \textbf{LLM}, and \textbf{PyTorch} for \textbf{100+} students across sessions}
+            \resumeItem{Supported CSUF’s largest CS org with \textbf{2,300} members, \textbf{50} officers, and \textbf{30–40} attendees per workshop}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-------------------------------------------
+\end{document}
